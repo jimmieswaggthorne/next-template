@@ -1,0 +1,30 @@
+// Global Mixins
+@use 'common' as *;
+
+// Global Component Styling
+@use "@/styles/buttons.scss";
+
+* {
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+.main {
+  min-height: calc(100vh - $bottom-gap);
+  padding: 30px;
+
+  @include Phone {
+    padding: 16px;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "css.validate": false,
+  "scss.validate": false,
+  "stylelint.config": null,
+  "stylelint.enable": true,
+  "stylelint.validate": [
+    "css",
+    "scss"
+  ],
+  "eslint.workingDirectories": [
+    // We want ESLint to be able to handle TypeScript, which requires
+    // providing a tsconfig.json file in the ESLint configuration
+    // under 'parserOptions.project'.
+    //
+    // Here we ensure that when the root project folder is opened in
+    // VS Code, VS Code's ESLint extension knows where the tsconfig
+    // file lives, since by default it is expected in the root
+    // working directory.
+    "./fed"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "editor.tabSize": 2,
+}

@@ -1,0 +1,94 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "sort-imports": [
+      2,
+      {
+        "ignoreDeclarationSort": true
+      }
+    ],
+    "no-unused-vars": "off",
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1
+      }
+    ],
+    "newline-after-var": [
+      "error",
+      "always"
+    ],
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": "block-like",
+        "next": "block-like"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "multiline-const"
+      },
+      {
+        "blankLine": "always",
+        "prev": "multiline-const",
+        "next": "*"
+      }
+    ],
+    "no-multi-spaces": "error",
+    "jsx-quotes": [
+      "error",
+      "prefer-double"
+    ],
+    "react/jsx-tag-spacing": [
+      "error",
+      {
+        "beforeSelfClosing": "always"
+      }
+    ],
+    "react/jsx-indent": [
+      "error",
+      2
+    ],
+    "react/jsx-indent-props": [
+      "error",
+      2
+    ],
+    "react-hooks/exhaustive-deps": "off",
+    "@next/next/no-img-element": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "warn"
+    ],
+    "@typescript-eslint/type-annotation-spacing": "error",
+    "arrow-spacing": "error",
+    "semi-spacing": "error",
+    "space-before-blocks": "error",
+    "max-statements-per-line": [
+      "error",
+      {
+        "max": 2
+      }
+    ],
+    // "max-len": ["warn", { "code":  120, "tabWidth": 4 , "ignoreComments": true }],
+    "no-mixed-spaces-and-tabs": "error",
+    "no-trailing-spaces": [
+      "error",
+      {
+        "ignoreComments": true
+      }
+    ],
+    "no-whitespace-before-property": "error",
+    "object-curly-newline": [
+      "error",
+      {
+        "consistent": true
+      }
+    ]
+  }
+}
